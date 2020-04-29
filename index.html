@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700i,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+            <div class="container header__content">
+
+                <div class="header__left">
+                    <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span
+                            class="pink_text">D</span></a>
+                    <form class="header__form" action="#">
+                        <div class="browse">Browse</div>
+                        <input type="text" class="header__input" placeholder="Search for Item...">
+                        <button class="button__header"><img src="img/lupa.jpg"></button>
+                    </form>
+                </div>
+                <div class="header__right">
+                    <div class="hCart">
+                        <a v-bind:href="urlShoppingCart"> <img class="cart" src="img/cart.svg" alt="cart"></a>
+                        <div class="cart_block">
+                            <div class="cart_block-block">
+                                <div class="cart_block-img">
+                                    <img src="img/SCadd.jpg" class="">
+                                    <div class="cart_block-textblock">
+                                        <p class="cart_block-text">Rebox Zane</p>
+                                        <p class="cart_block-text_bottom">1 x $250</p>
+                                    </div>
+                                    <button class="cart_block-button"><img src="img/del_button.jpg"></button>
+                                    
+                                </div>
+                                <div class="cart_block-line"></div>                                          
+                            </div>                            
+                        </div>
+                    </div>
+                    <div>
+                        <a v-bind:href="urlCheckOut" class="button">My Account<span class="button_arrow"></span></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container nav__content">
+                <ul class="menu">
+                    <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Hot Deals </a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="promo">
+            <div class="container promo__container">
+                <div class="pink_line">
+                </div>
+                <div class="promo__text">
+                    <h2 class="promo__h2">THE BRAND</h2>
+                    <h3 class="promo__h3">OF LUXERIOUS <span class="pink_text">FASHION</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="gap"> </div>
+        <div class="track">
+            <div class="container track__content">
+                <div class="track__left">
+                    <div class="track__left1">
+                        <div class="track__left1__text">
+                            <p class="track__left1__text-h1"><b>HOT DEAL</b></p>
+                            <p class="track__left1__text-h2"><b>FOR MEN</b></p>
+                        </div>
+                    </div>
+                    <div class="track__left2">
+                        <div class="track__left2__text">
+                            <p class="track__left1__text-h1"><b>LUXIROUS & TRENDLY</b></p>
+                            <p class="track__left1__text-h2"><b>ACCESORIES</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track__right">
+                    <div class="track__right1">
+                        <div class="track__right1__text">
+                            <p class="track__left1__text-h1"><b>30% OFFER</b></p>
+                            <p class="track__left1__text-h2"><b>WOMEN</b></p>
+                        </div>
+                    </div>
+                    <div class="track__right2">
+                        <div class="track__right2__text">
+                            <p class="track__left1__text-h1"><b>NEW ARRIVALS</b></p>
+                            <p class="track__left1__text-h2"><b>KIDS</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container block">
+                <h2 class="fetured__h2">Fetured Items</h2>
+                <h3 class="fetured__h3">Shop for items based on what we featured in this week</h3>
+            </div>
+        </div>
+        <div>
+            <div class="container catalog">
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_1.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_2.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_3.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_4.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_5.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_6.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_7.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+                <div class="menu_box">
+                    <a href="Single%20Page.html"><img class="catalog__img" src="img/goods_8.jpg"> </a>
+                    <a href="Single%20Page.html">
+                        <p class="catalog__text">Mango People T-shirt</p>
+                    </a>
+                    <p class="catalog__price">&#36;52.00</p>
+                    <a href="#" class="menu_box-add"><img class="img__add" src="img/add.webp">
+                        <p><span class="add__text">Add to cart</span></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container browse_buttom">
+                <a href="Product.html">
+                    <p class="text_button">Browse All Product &#10144;</p>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="container specification">
+                <div class="specification__left">
+                    <p class="specification__left_text">
+                        30% <span class="pink_text"> OFFER</span><br>
+                        <span class="specification__left_text-bottom"> FOR WOMEN</span>
+                    </p>
+                </div>
+                <div class="specification__right">
+                    <div class="first_specification">
+                        <div> <img src="img/car.svg" class="IMG_1"></div>
+                        <div>
+                            <div>
+                                <p class="delivery">Free Delivery</p>
+                            </div>
+                            <div>
+                                <p class="delivery__details">Worldwide delivery on all. Authorit tively morph
+                                    next-generation innov tion with extensive models.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first_specification">
+                        <div> <img src="img/sale.svg" class="IMG_2"> </div>
+                        <div>
+                            <div>
+                                <p class="delivery">Sales &amp; discounts</p>
+                            </div>
+                            <div>
+                                <p class="delivery__details">Worldwide delivery on all. Authorit tively morph
+                                    next-generation innov tion with extensive models.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first_specification">
+                        <div> <img src="img/crown.svg" class="IMG_3"> </div>
+                        <div>
+                            <div>
+                                <p class="delivery">Quality assurance</p>
+                            </div>
+                            <div>
+                                <p class="delivery__details">Worldwide delivery on all. Authorit tively morph
+                                    next-generation innov tion with extensive models.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="container promo__bottom">
+
+            <div class="container feedback">
+                <div> <img src="img/face.png" class="face"> </div>
+                <div>
+                    <p class="feedback__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                        condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <p class="feedback__name">Bin Burhan</p>
+                    <p class="feedback__position">Dhaka, Bd</p>
+                </div>
+                <div>
+                    <p class="newletters__1">SUBSCRIBE</p>
+                    <p class="newletters__2">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="low__form" action="#">
+                        <input type="email" class="input__low" placeholder="Enter Your Email">
+                        <button class="browse__low">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container bottom">
+            <div class="bottom__left">
+                <div>
+                    <a class="logo__bootom" href="index.html"><img class="logo__img" src="img/logo.png"
+                            alt="logo">BRAN<span class="pink_text">D</span></a>
+                    <p class="bottom__text">Objectively transition extensive data rather than cross functional
+                        solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                        Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                        <br>
+                        <br> Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+                        superior initiatives for wireless technologies. Dynamically optimize. </p>
+                </div>
+            </div>
+            <div class="bottom__right">
+                <div>
+                    <p class="red__text"><b>COMPANY</b></p>
+                </div>
+                <div>
+                    <p class="red__text"><b>INFORMATION</b></p>
+                </div>
+                <div>
+                    <p class="red__text"><b>SHOP CATEGORY</b></p>
+                </div>
+
+                <div class="column__link"> <a href="#" class="bottom__link">Home </a> <a href="#"
+                        class="bottom__link">Shop </a> <a href="#" class="bottom__link">About </a> <a href="#"
+                        class="bottom__link">How It Works </a> <a href="#" class="bottom__link">Contact </a> </div>
+                <div class="column__link"> <a href="#" class="bottom__link">Tearms &amp; Condition </a> <a href="#"
+                        class="bottom__link">Privacy Policy </a> <a href="#" class="bottom__link">How to Buy </a> <a
+                        href="#" class="bottom__link">How to Sell </a> <a href="#" class="bottom__link">Promotions </a>
+                </div>
+                <div class="column__link"> <a href="Product.html" class="bottom__link">Men </a> <a href="Product.html"
+                        class="bottom__link">Women </a> <a href="Product.html" class="bottom__link">Child</a> <a
+                        href="Product.html" class="bottom__link">Apparel </a> <a href="Product.html"
+                        class="bottom__link">Brows All </a> </div>
+            </div>
+        </div>
+        <div class="Copyright">
+            <div class="container Copyright__bottom">
+                <div class="Copyright__text">
+                    <p>&#64; 2017 Brand All Rights Reserved.</p>
+                </div>
+                <div class="Copyright__right">
+                    <button class="logo__facebook"><img src="img/facebook.jpg"></button>
+                    <button class="logo__twitter"><img src="img/twitter.png"></button>
+                    <button class="logo__linkedin"><img src="img/linkedin.jpg"></button>
+                    <button class="logo__pinterest"><img src="img/pinterest.jpg"></button>
+                    <button class="logo__Google"><img src="img/Google+.jpg"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
